@@ -1,0 +1,26 @@
+PODS:
+  - Alamofire (4.8.1)
+  - iOSDropDown (0.2.7)
+  - SDWebImage (4.4.6):
+    - SDWebImage/Core (= 4.4.6)
+  - SDWebImage/Core (4.4.6)
+
+DEPENDENCIES:
+  - Alamofire
+  - iOSDropDown
+  - SDWebImage
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - iOSDropDown
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  iOSDropDown: 7a4cfc67d5166f319858747b63cd2f7760c4fb4b
+  SDWebImage: 3f3f0c02f09798048c47a5ed0a13f17b063572d8
+
+PODFILE CHECKSUM: 9074071d878f357bf149a84fd6235b6c7e441d41
+
+COCOAPODS: 1.6.1

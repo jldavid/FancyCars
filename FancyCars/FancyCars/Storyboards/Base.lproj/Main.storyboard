@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Car Listing View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="CarListingViewController" customModule="FancyCars" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7td-gD-5MH">
+                                <rect key="frame" x="0.0" y="175" width="414" height="721"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aYy-Jg-p6s" customClass="DropDown" customModule="iOSDropDown">
+                                <rect key="frame" x="20" y="124" width="374" height="40"/>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="f82-1P-2FU"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gold" translatesAutoresizingMaskIntoConstraints="NO" id="h0p-Dg-JKW">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="108" id="dQf-x7-HWi"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="lRf-gb-766">
+                                <rect key="frame" x="120" y="59" width="174" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="DXU-Fl-Uot"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradient" translatesAutoresizingMaskIntoConstraints="NO" id="Idb-jJ-NDY">
+                                <rect key="frame" x="0.0" y="39" width="414" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="x3l-U6-Mdh"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aYy-Jg-p6s" secondAttribute="trailing" constant="20" id="0MU-cu-EBd"/>
+                            <constraint firstItem="lRf-gb-766" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="2e9-1k-Ibg"/>
+                            <constraint firstItem="aYy-Jg-p6s" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="7CV-O6-ecX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7td-gD-5MH" secondAttribute="trailing" id="BQ6-X5-9yd"/>
+                            <constraint firstAttribute="top" secondItem="Idb-jJ-NDY" secondAttribute="top" constant="-39" id="BcS-3L-I6W"/>
+                            <constraint firstItem="7td-gD-5MH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="131" id="Ih1-Sj-uTU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="h0p-Dg-JKW" secondAttribute="trailing" id="Ij0-b2-reQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lRf-gb-766" secondAttribute="trailing" constant="120" id="Yf3-NY-Xl4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Idb-jJ-NDY" secondAttribute="trailing" id="Z4S-5M-cPp"/>
+                            <constraint firstItem="7td-gD-5MH" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="34" id="aB9-k5-N5u"/>
+                            <constraint firstItem="aYy-Jg-p6s" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="gbg-mu-qkT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="h0p-Dg-JKW" secondAttribute="top" constant="44" id="jL2-kW-XgA"/>
+                            <constraint firstItem="lRf-gb-766" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="lVq-YF-v2x"/>
+                            <constraint firstItem="h0p-Dg-JKW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="oIR-qj-i7p"/>
+                            <constraint firstItem="7td-gD-5MH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qAP-ia-ufI"/>
+                            <constraint firstItem="Idb-jJ-NDY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="yCU-IF-frQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="dropDown" destination="aYy-Jg-p6s" id="Ovz-Fb-B4d"/>
+                        <outlet property="tableView" destination="7td-gD-5MH" id="0ZY-Rd-wv9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="gold" width="640" height="400"/>
+        <image name="gradient" width="414" height="240"/>
+        <image name="logo" width="214" height="41"/>
+    </resources>
+</document>
